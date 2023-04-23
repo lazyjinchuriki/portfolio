@@ -10,11 +10,11 @@ This is a portfolio website application built using React, emailjs, React-bootst
 - Email functionality using emailjs.
 - Styling using React-bootstrap library.
 - Customizable tabs for different stuff.
-- Contact form with without asking for your account password.
+- Easily contact me.
 
 ## Screenshots
 
-Here are some screenshots of Cinephile in action:
+Here are some screenshots of my portfolio in action:
 
 ![Homepage screenshot](/screenshots/banner.png)
 ![Projects results screenshot](/screenshots/projects.png)
