@@ -71,6 +71,17 @@ p.success {
 p.danger {
 	color: red;
 }
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(46, 46, 46, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 10px;
+}
 
 
 /************ Navbar Css ************/
@@ -324,8 +335,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: #151515;
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
   margin-top: -60px;
+  padding-bottom: 20px;
 }
 .skill h2 {
 	font-size: 45px;
@@ -430,7 +441,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 .proj-imgbx::before {
   content: "";
@@ -479,6 +490,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+
 
 /************ Contact Css ************/
 .contact {
