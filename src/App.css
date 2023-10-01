@@ -98,7 +98,6 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
-    width: 2%;
     color: #fff;
     font-family: 'Gothic A1', sans-serif;
     font-size: 20px;
@@ -125,6 +124,7 @@ span.navbar-text {
 .social-icon {
     display: inline-block;
     margin-left: 14px;
+    width:164px;
 }
 .social-icon a {
     width: 42px;
