@@ -65,6 +65,7 @@ input:focus, textarea:focus, select:focus {
 		padding: 0 150px;
 	}
 }
+
 p.success {
 	color: green;
 }
@@ -642,5 +643,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+/*responsive*/
+@media (max-width:500px){
+  .banner h1{
+    font-size: 46px;
+    margin: 4px 0px;
+  }
+  .wrap{
+    font-size: 30px;
+    margin-top: 6px;
   }
 }
