@@ -41,7 +41,7 @@ export const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
-            <div className="d-flex gap-4 justify-content-evenly m-auto">
+            <div className="d-flex gap-4 justify-content-around m-auto">
               <Nav.Link
                 href="#home"
                 className={
@@ -73,7 +73,7 @@ export const NavBar = () => {
               </Nav.Link>
             </div>
 
-            <span className="navbar-text">
+            <div className="navbar-text d-flex justify-content-between align-items-center">
               <div className="social-icon">
                 <a
                   href="https://www.linkedin.com/in/rahul-khushalani-77ab21201/"
@@ -98,11 +98,11 @@ export const NavBar = () => {
                 </a>
               </div>
               <HashLink to="#connect">
-                <button>
+                <button className="text-nowrap">
                   <span>Let’s Connect</span>
                 </button>
               </HashLink>
-            </span>
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
