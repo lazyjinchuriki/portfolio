@@ -98,6 +98,11 @@ nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
 }
+.nav .container .nav-container{
+  @media (max-width:365px) {
+    padding-right: 1rem;
+  }
+}
 nav.navbar a.navbar-brand {
     color: #fff;
     font-family: 'Gothic A1', sans-serif;
@@ -118,13 +123,13 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
 }
-span.navbar-text {
+/* span.navbar-text {
     display: flex;
     align-items: center;
-}
+} */
 .social-icon {
     display: inline-block;
-    margin-left: 14px;
+    /* margin-left: 14px; */
     width:164px;
 }
 .social-icon a {
@@ -166,10 +171,15 @@ span.navbar-text {
   border: 1px solid #fff;
   padding: 18px 34px;
   font-size: 18px;
-  margin-left: 18px;
 	position: relative;
-	background-color: transparent;
+  background-color: transparent;
 	transition: 0.3s ease-in-out;
+  @media (min-width: 576px){
+    margin-left: 18px;
+  }
+  @media(min-width: 768px) and (max-width: 820px){
+    right: 1.28rem;
+  }
 }
 .navbar-text button span {
   z-index: 1;
@@ -197,7 +207,7 @@ span.navbar-text {
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
 	outline: none;
-    box-shadow: none;
+  box-shadow: none;
 }
 nav.navbar .navbar-toggler-icon {
   width: 24px;
