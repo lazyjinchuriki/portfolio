@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio (English)
 [![Visit My Website](https://img.shields.io/badge/Visit%20My-Website-blue?style=for-the-badge&logo=arrow-right&logoColor=white)](https://lazyjinchuriki.github.io/portfolio/)
 
 This is a portfolio website application built using React, emailjs, React-bootstrap, and Animate.css. The app showcases my portfolio and provides a way for visitors to contact me. You can check out my work there.
@@ -83,3 +83,6 @@ If you're not coding right now, check out my socials:
 
 [![Instagram](https://img.shields.io/badge/Instagram-%40amundaneguy-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/amundaneguy/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Rahul%20Khushalani-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rahul-khushalani-77ab21201/)
+
+
+
