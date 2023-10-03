@@ -250,6 +250,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
+#nav-link{
+  padding: 10px;
+  border-radius: 15px;
+  color: white;
+  transition: all 0.3s ease-in;
+  }
+  
+#nav-link:hover{
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+  }
+
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
