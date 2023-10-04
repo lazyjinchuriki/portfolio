@@ -11,8 +11,14 @@ import nodejs from "../assets/img/Skills/nodejs.svg";
 import tailwindcss from "../assets/img/Skills/tailwindcss.svg";
 import illustrator from "../assets/img/Skills/illustrator.svg";
 import colorSharp from "../assets/img/color-sharp.png";
+import { useState } from "react";
 
 export const Skills = () => {
+  const [hovored, setHovored] = useState(false);
+
+  const handleHover = (hovored) => {
+    setHovored(hovored);
+  };
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -32,6 +38,19 @@ export const Skills = () => {
       items: 1,
     },
   };
+
+  const skills = [
+    { name: "HTML5", img: html },
+    { name: "CSS3", img: css },
+    { name: "JavaScript", img: js },
+    { name: "React JS", img: react },
+    { name: "Next JS", img: nextjs },
+    { name: "Tailwind CSS", img: tailwindcss },
+    { name: "My SQL", img: mysql },
+    { name: "Mongo DB", img: mongodb },
+    { name: "Node JS", img: nodejs },
+    { name: "Adobe Illustrator", img: illustrator },
+  ];
 
   return (
     <section className="skill" id="skills">
@@ -54,48 +73,22 @@ export const Skills = () => {
               <Carousel
                 responsive={responsive}
                 infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={3000}
+                pauseOnHover={true}
+                mouseTracking={true}
                 className="owl-carousel owl-theme skill-slider"
+                onMouseEnter={() => handleHover(true)}
+                onMouseLeave={() => handleHover(false)}
               >
-                <div className="item">
-                  <img src={html} alt="skills" />
-                  <h5>HTML5</h5>
-                </div>
-                <div className="item">
-                  <img src={css} alt="skills" />
-                  <h5>CSS3</h5>
-                </div>
-                <div className="item">
-                  <img src={js} alt="skills" />
-                  <h5>JavaScript</h5>
-                </div>
-                <div className="item">
-                  <img src={react} alt="skills" />
-                  <h5>React JS</h5>
-                </div>
-                <div className="item">
-                  <img src={nextjs} alt="skills" />
-                  <h5>Next JS</h5>
-                </div>
-                <div className="item">
-                  <img src={tailwindcss} alt="skills" />
-                  <h5>Tailwind CSS</h5>
-                </div>
-                <div className="item">
-                  <img src={mysql} alt="skills" />
-                  <h5>My SQL</h5>
-                </div>
-                <div className="item">
-                  <img src={mongodb} alt="skills" />
-                  <h5>Mongo DB</h5>
-                </div>
-                <div className="item">
-                  <img src={nodejs} alt="skills" />
-                  <h5>Node JS</h5>
-                </div>
-                <div className="item">
-                  <img src={illustrator} alt="skills" />
-                  <h5>Adobe Illustrator</h5>
-                </div>
+                {skills.map((skill, index) => {
+                  return (
+                    <div className="item" key={index}>
+                      <img src={skill.img} alt="skills" />
+                      <h5>{skill.name}</h5>
+                    </div>
+                  );
+                })}
               </Carousel>
             </div>
           </div>
