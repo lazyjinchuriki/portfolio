@@ -252,15 +252,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 #nav-link{
   padding: 10px;
-  border-radius: 15px;
+ 
   color: white;
   transition: all 0.3s ease-in;
   }
   
 #nav-link:hover{
-    color: black;
-    background-color: white;
-    border-radius: 15px;
+   
+    text-decoration: underline;
+    text-underline-offset: 4px;
   }
 
 /************ Banner Css ************/
