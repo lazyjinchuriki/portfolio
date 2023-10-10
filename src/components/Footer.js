@@ -4,6 +4,8 @@ import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 
 export const Footer = () => {
+  // Get the current year dynamically
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="footer">
       <Container>
@@ -31,7 +33,7 @@ export const Footer = () => {
               <img src={navIcon3} alt="Icon" />
             </a>
           </div>
-          <p>Copyright 2023. All Rights Reserved</p>
+          <p>Copyright ©{currentYear}. All Rights Reserved</p>
         </Col>
       </Container>
     </footer>
