@@ -144,7 +144,11 @@ nav.navbar {
 
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  /* background-color: #121212; */
+  background-color: rgba(255, 255, 255, 0.048);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .nav .container .nav-container {
