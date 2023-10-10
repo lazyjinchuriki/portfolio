@@ -83,6 +83,27 @@ select:focus {
   outline: none;
 }
 
+/* towards top button */
+.top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  background-color:gray;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.top-button:hover{
+  background-color: white;
+}
+
 @media (min-width:1700px) {
   main .container {
     max-width: 100%;
