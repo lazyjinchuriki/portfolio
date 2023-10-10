@@ -59,7 +59,7 @@ export const Projects = () => {
       imgUrl: projImg3,
     },
     {
-      title: "The Big Band Theory",
+      title: "The Big Bang Theory",
       description: "Simple Illustrations",
       imgUrl: projImg4,
     },
