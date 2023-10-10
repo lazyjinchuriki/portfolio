@@ -821,3 +821,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin-top: 6px;
   }
 }
+
+
+.custom-navbar {
+  background-color: rgba(255, 255, 255, 0.1); /* Adjust the alpha (transparency) value as needed */
+  backdrop-filter: blur(15px); /* Adjust the blur value as needed */
+  transition: background-color 0.3s, backdrop-filter 0.3s;
+}
+
+.custom-navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha (transparency) value as needed */
+}
+
