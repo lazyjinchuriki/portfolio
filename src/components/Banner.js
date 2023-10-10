@@ -1,53 +1,33 @@
+import React, { useEffect, useRef } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
-import { useState, useEffect } from "react";
+import Typed from "typed.js"; // Import Typed.js library
 import { BrowserRouter as Router } from "react-router-dom";
 
 export const Banner = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Illustrator", "UI/UX Designer"];
-  const period = 2000;
+  // Create a ref for the text element that you want to animate
+  const textRef = useRef(null);
 
   useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => {
-      clearInterval(ticker);
+    // Initialize Typed.js once the component is mounted
+    const toRotate = ["Web Developer", "Illustrator", "UI/UX Designer"];
+    const options = {
+      strings: toRotate,
+      typeSpeed: 50, // typing speed in milliseconds
+      backSpeed: 25, // backspacing speed in milliseconds
+      startDelay: 1000, // delay before typing starts in milliseconds
+      backDelay: 1000, // delay before backspacing starts in milliseconds
+      loop: true, // loop the animation indefinitely
+      showCursor: false,
     };
-  });
 
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
+    const typed = new Typed(textRef.current, options);
 
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex((prevIndex) => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === "") {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(500);
-    } else {
-      setIndex((prevIndex) => prevIndex + 1);
-    }
-  };
+    // Cleanup function
+    return () => {
+      typed.destroy(); // destroy Typed.js instance when the component unmounts
+    };
+  }, []); // Empty dependency array to ensure this effect runs only once
 
   return (
     <Router>
@@ -58,8 +38,8 @@ export const Banner = () => {
               <span className="tagline">Welcome to my Portfolio</span>
               <h1>{"Rahul Khushalani"}</h1>
               <span className="wrap">
-                {"{"}
-                {text}
+                {"{ "}
+                <span ref={textRef}></span> {/* Use the textRef for Typed.js */}
                 {"}"}
               </span>
               <p>
