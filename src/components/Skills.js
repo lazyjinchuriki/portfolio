@@ -40,16 +40,16 @@ export const Skills = () => {
   };
 
   const skills = [
-    { name: "HTML5", img: html },
-    { name: "CSS3", img: css },
-    { name: "JavaScript", img: js },
-    { name: "React JS", img: react },
-    { name: "Next JS", img: nextjs },
-    { name: "Tailwind CSS", img: tailwindcss },
-    { name: "My SQL", img: mysql },
-    { name: "Mongo DB", img: mongodb },
-    { name: "Node JS", img: nodejs },
-    { name: "Adobe Illustrator", img: illustrator },
+    { name: "HTML5", img: html, shadowClass: "shadow-color-html" },
+    { name: "CSS3", img: css, shadowClass: "shadow-color-css" },
+    { name: "JavaScript", img: js, shadowClass: "shadow-color-js" },
+    { name: "React JS", img: react, shadowClass: "shadow-color-reactjs" },
+    { name: "Next JS", img: nextjs, shadowClass: "shadow-color-nextjs" },
+    { name: "Tailwind CSS", img: tailwindcss, shadowClass: "shadow-color-tcs" },
+    { name: "My SQL", img: mysql, shadowClass: "shadow-color-mysql" },
+    { name: "Mongo DB", img: mongodb, shadowClass: "shadow-color-mdb" },
+    { name: "Node JS", img: nodejs, shadowClass: "shadow-color-njs" },
+    { name: "Adobe Illustrator", img: illustrator, shadowClass: "shadow-color-adi" },
   ];
 
   return (
@@ -82,9 +82,10 @@ export const Skills = () => {
                 onMouseLeave={() => handleHover(false)}
               >
                 {skills.map((skill, index) => {
+                  const skillImageClass = skill.shadowClass;
                   return (
                     <div className="item" key={index}>
-                      <img src={skill.img} alt="skills" />
+                      <img src={skill.img} alt="skills" className={skillImageClass}/>
                       <h5>{skill.name}</h5>
                     </div>
                   );
