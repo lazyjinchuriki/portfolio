@@ -737,7 +737,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
-  border-radius: 20;
+  border-radius: 20px;
   position: relative;
   transition: 0.3s ease-in-out;
 }
@@ -745,10 +745,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button span {
   z-index: 1;
   position: relative;
+  border-radius: 20px;
 }
 
 .contact form button:hover {
   color: #fff;
+  border-radius: 20px;
 }
 
 .contact form button::before {
@@ -766,6 +768,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .contact form button:hover::before {
   width: 100%;
+  border-radius: 20px;
 }
 
 /************ Footer Css ************/
