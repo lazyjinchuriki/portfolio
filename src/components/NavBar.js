@@ -7,6 +7,7 @@ import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
+import logo from "../assets/img/logo.png";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -32,10 +33,22 @@ export const NavBar = () => {
 
   return (
     <Router>
-<Navbar expand="md" className={`custom-navbar ${scrolled ? "scrolled" : ""}`}>       <Container>
-          <Navbar.Brand href="/">
-            <h1>portfolio</h1>
-          </Navbar.Brand>
+      <Navbar
+        expand="md"
+        className={`custom-navbar ${scrolled ? "scrolled" : ""}`}
+      >
+        <Container>
+          <div>
+            <a
+              className="d-flex gap-2 align-items-center text-decoration-none text-white nav-title me-4"
+              href="."
+            >
+              <div style={{ width: "50px" }}>
+                <img src={logo} alt="logo" className="nav-title-img" />
+              </div>
+              <h1>portfolio</h1>
+            </a>
+          </div>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
