@@ -17,6 +17,7 @@
     "express": "^4.18.2",
     "nodemailer": "^6.9.1",
     "react": "^18.2.0",
+    "react-animation-on-scroll": "^5.1.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
     "react-multi-carousel": "^2.8.2",
