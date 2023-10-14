@@ -3,21 +3,22 @@
   font-family: Centra;
   src: url('./assets/font/CentraNo2-Bold.ttf');
   font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
   font-family: Centra;
   src: url('./assets/font/CentraNo2-Book.ttf');
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   font-family: Centra;
   src: url('./assets/font/CentraNo2-Medium.ttf');
   font-weight: 500;
+  font-display: swap;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400&display=swap');
 
 /* Default CSS */
 * {
@@ -88,7 +89,7 @@ select:focus {
   position: fixed;
   bottom: 20px;
   right: 10px;
-  background-color:gray;
+  background-color: gray;
   border: none;
   border-radius: 50%;
   width: 45px;
@@ -100,7 +101,8 @@ select:focus {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
-.top-button:hover{
+
+.top-button:hover {
   background-color: white;
 }
 
@@ -523,33 +525,43 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .shadow-color-html {
   box-shadow: 0 5px 3px -1px #FF6D00;
 }
+
 .shadow-color-js {
   box-shadow: 0 5px 3px -1px #fbbd61;
 }
+
 .shadow-color-css {
   box-shadow: 0 5px 3px -1px #319ef8;
 }
-.shadow-color-reactjs{
+
+.shadow-color-reactjs {
   box-shadow: 0 5px 3px -1px #6ebdfd;
 }
-.shadow-color-nextjs{
+
+.shadow-color-nextjs {
   box-shadow: 0 5px 3px -1px #ffffff;
 }
-.shadow-color-tcs{
+
+.shadow-color-tcs {
   box-shadow: 0 5px 3px -1px #1b598b;
 }
-.shadow-color-mysql{
+
+.shadow-color-mysql {
   box-shadow: 0 5px 3px -1px #0e3d64;
 }
-.shadow-color-mdb{
+
+.shadow-color-mdb {
   box-shadow: 0 5px 3px -1px #32c03e;
 }
-.shadow-color-njs{
+
+.shadow-color-njs {
   box-shadow: 0 5px 3px -1px #13750f;
 }
-.shadow-color-adi{
+
+.shadow-color-adi {
   box-shadow: 0 5px 3px -1px #FF5722;
 }
+
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
@@ -647,9 +659,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
   height: 0;
   transition: 0.4s ease-in-out;
+
+  top: 0;
+  left: 0;
 }
 
 .proj-imgbx:hover::before {
+  width: 100%;
   height: 100%;
 }
 
@@ -777,7 +793,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: 0;
   z-index: 0;
   transition: 0.3s ease-in-out;
-  border-radius:20px;
+  border-radius: 20px;
 }
 
 .contact form button:hover::before {
@@ -882,12 +898,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 .custom-navbar {
-  background-color: rgba(255, 255, 255, 0.1); /* Adjust the alpha (transparency) value as needed */
-  backdrop-filter: blur(15px); /* Adjust the blur value as needed */
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Adjust the alpha (transparency) value as needed */
+  backdrop-filter: blur(15px);
+  /* Adjust the blur value as needed */
   transition: background-color 0.3s, backdrop-filter 0.3s;
 }
 
 .custom-navbar.scrolled {
-  background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha (transparency) value as needed */
+  background-color: rgba(255, 255, 255, 0.7);
+  /* Adjust the alpha (transparency) value as needed */
 }
-

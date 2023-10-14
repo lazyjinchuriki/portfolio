@@ -6,6 +6,8 @@ import "animate.css";
 
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
+import LazyLoad from 'react-lazy-load';
+
 export const Contact = () => {
   const form = useRef();
   const [buttonText, setButtonText] = useState("Send");
@@ -49,7 +51,9 @@ export const Contact = () => {
         <Row className="align-items-center">
           <Col size={12} md={6}>
             <AnimationOnScroll animateIn="animate__animated animate__zoomIn">
-              <img src={contactImg} alt="Contact Us" />
+              <LazyLoad width={785} height={589} offsetVertical={300}>
+                <img src={contactImg} alt="Contact Us" style={{ width: "785px", height: "589px" }} />
+              </LazyLoad>
             </AnimationOnScroll>
           </Col>
           <Col size={12} md={6}>
