@@ -218,6 +218,21 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   width: 100%;
 }
 
+.navbar-link.active::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background: rgb(23, 239, 255);
+  background: linear-gradient(
+    113deg,
+    rgba(23, 239, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 84%
+  );
+}
+
 /* span.navbar-text {
     display: flex;
     align-items: center;
