@@ -221,7 +221,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .navbar-link.active::after {
   content: "";
   position: absolute;
-  width: 0;
+  width: 100%;
   height: 1px;
   bottom: 0;
   left: 0;
