@@ -44,7 +44,7 @@ export const NavBar = () => {
               href="."
             >
               <div style={{ width: "50px" }}>
-                <img src={logo} alt="logo" className="nav-title-img" />
+                <img src={logo} alt="logo" className="nav-title-img" style={{ width: "100%" }} />
               </div>
               <h1>portfolio</h1>
             </a>
@@ -92,21 +92,21 @@ export const NavBar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={navIcon1} alt="" />
+                  <img src={navIcon1} alt="navIcon1" style={{ width: "16px", height: "16px" }} />
                 </a>
                 <a
                   href="https://github.com/lazyjinchuriki"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={navIcon2} alt="" />
+                  <img src={navIcon2} alt="navIcon2" style={{ width: "98px", height: "96px" }} />
                 </a>
                 <a
                   href="https://www.instagram.com/amundaneguy/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={navIcon3} alt="" />
+                  <img src={navIcon3} alt="navIcon3" style={{ width: "16px", height: "16px" }} />
                 </a>
               </div>
               <HashLink to="#connect">

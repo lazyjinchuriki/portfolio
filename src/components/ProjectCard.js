@@ -2,6 +2,8 @@ import { Col } from "react-bootstrap";
 import code from "../assets/img/code.svg";
 import link from "../assets/img/link.svg";
 
+import LazyLoad from 'react-lazy-load';
+
 export const ProjectCard = ({
   title,
   description,
@@ -14,7 +16,11 @@ export const ProjectCard = ({
     <Col size={12} sm={6} md={4}>
       <div>
         <div className="proj-imgbx">
-          <img src={imgUrl} alt="Movie App" />
+
+          <LazyLoad>
+            <img src={imgUrl} alt="Movie App" />
+          </LazyLoad>
+
 
           <div className="proj-txtx">
             <h4>{title}</h4>
