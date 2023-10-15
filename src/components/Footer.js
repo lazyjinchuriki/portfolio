@@ -16,21 +16,21 @@ export const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={navIcon1} alt="Icon" />
+              <img src={navIcon1} alt="Icon" style={{ width: "16px", height: "16px" }} />
             </a>
             <a
               href="https://github.com/lazyjinchuriki"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={navIcon2} alt="Icon" />
+              <img src={navIcon2} alt="Icon" style={{ width: "98px", height: "96px" }} />
             </a>
             <a
               href="https://www.instagram.com/amundaneguy/"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={navIcon3} alt="Icon" />
+              <img src={navIcon3} alt="Icon" style={{ width: "16px", height: "16px" }} />
             </a>
           </div>
           <p>Copyright ©{currentYear}. All Rights Reserved</p>

@@ -13,6 +13,8 @@ import illustrator from "../assets/img/Skills/illustrator.svg";
 import colorSharp from "../assets/img/color-sharp.png";
 import { useState } from "react";
 
+import LazyLoad from 'react-lazy-load';
+
 export const Skills = () => {
   const [hovored, setHovored] = useState(false);
 
@@ -85,7 +87,9 @@ export const Skills = () => {
                   const skillImageClass = skill.shadowClass;
                   return (
                     <div className="item" key={index}>
-                      <img src={skill.img} alt="skills" className={skillImageClass}/>
+                      <LazyLoad width={150} height={150}>
+                        <img src={skill.img} alt="skills" className={skillImageClass} style={{ width: "150px", height: "150px" }} />
+                      </LazyLoad>
                       <h5>{skill.name}</h5>
                     </div>
                   );
