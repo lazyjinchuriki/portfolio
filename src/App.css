@@ -52,7 +52,9 @@ h6 {
   line-height: normal;
 
 }
-
+p{
+  text-align: justify;
+}
 p,
 a,
 li,
