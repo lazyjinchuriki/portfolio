@@ -44,15 +44,15 @@ export const Contact = () => {
         width: `${mouseOver ? "100%" : "90%"}`,
         margin: "auto",
         borderRadius: `${mouseOver ? "0" : "50px"}`,
-        transition: "all 0.4s ",
+        transition: "all 1s ",
       }}
     >
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
             <AnimationOnScroll animateIn="animate__animated animate__zoomIn">
-              <LazyLoad width={785} height={589} offsetVertical={300}>
-                <img src={contactImg} alt="Contact Us" style={{ width: "785px", height: "589px" }} />
+              <LazyLoad width={500} height={400} offsetVertical={300}>
+                <img src={contactImg} alt="Contact Us" style={{ width: "500px", height: "400px" }} />
               </LazyLoad>
             </AnimationOnScroll>
           </Col>
