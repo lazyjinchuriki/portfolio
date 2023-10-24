@@ -5,6 +5,7 @@ import contactImg from "../assets/img/contact-img.svg";
 import "animate.css";
 
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { toast } from "sonner";
 
 export const Contact = () => {
   const form = useRef();
@@ -25,9 +26,12 @@ export const Contact = () => {
         (result) => {
           console.log(result.text);
           setButtonText("Sent");
+          toast.success("Message sent successfully!");
         },
         (error) => {
           console.log(error.text);
+          toast.error("Message failed to send!");
+          setButtonText("Sent");
         }
       );
   };
