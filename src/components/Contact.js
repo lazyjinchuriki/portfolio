@@ -6,7 +6,8 @@ import "animate.css";
 
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
-import LazyLoad from 'react-lazy-load';
+import LazyLoad from "react-lazy-load";
+import { toast } from "sonner";
 
 export const Contact = () => {
   const form = useRef();
@@ -27,9 +28,12 @@ export const Contact = () => {
         (result) => {
           console.log(result.text);
           setButtonText("Sent");
+          toast.success("Message Sent Successfully!");
         },
         (error) => {
           console.log(error.text);
+          setButtonText("Send");
+          toast.error("Message Failed to Send!");
         }
       );
   };
@@ -52,7 +56,11 @@ export const Contact = () => {
           <Col size={12} md={6}>
             <AnimationOnScroll animateIn="animate__animated animate__zoomIn">
               <LazyLoad width={500} height={400} offsetVertical={300}>
-                <img src={contactImg} alt="Contact Us" style={{ width: "500px", height: "400px" }} />
+                <img
+                  src={contactImg}
+                  alt="Contact Us"
+                  style={{ width: "500px", height: "400px" }}
+                />
               </LazyLoad>
             </AnimationOnScroll>
           </Col>

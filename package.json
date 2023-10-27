@@ -25,6 +25,7 @@
     "react-on-screen": "^2.1.1",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "^5.0.1",
+    "sonner": "^1.0.3",
     "typed.js": "^2.0.16",
     "web-vitals": "^2.1.4"
   },
